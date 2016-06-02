@@ -33,7 +33,6 @@ void ReAS(vector<rasmus> s, vector<rasmus> f, int k, int n,vector<rasmus> &res)
     {
         return;
     }
-
 }
 
 vector<rasmus> IeAS(vector<rasmus> s, vector<rasmus> f)
@@ -61,9 +60,12 @@ int main()
 
     rasmus a[] = {1,3,0,5,3,5,6,8,8,2,12};
     rasmus b[] = {4,5,6,7,9,9,10,11,12,14,16};
-    vector<rasmus> s(a, a+sizeof(a)/sizeof(a[0]));
-    vector<rasmus> f(b, b+sizeof(b)/sizeof(b[0]));
-
+    rasmus c[] = {1,2,4,1,5,8,9,11,13};
+    rasmus d[] = {3,5,7,8,9,10,11,14,16};
+    //vector<rasmus> s(a, a+sizeof(a)/sizeof(a[0]));
+    //vector<rasmus> f(b, b+sizeof(b)/sizeof(b[0]));
+    vector<rasmus> s(c, c+sizeof(c)/sizeof(c[0]));
+    vector<rasmus> f(d, d+sizeof(d)/sizeof(d[0]));
     vector<rasmus> res;
     res.push_back(1);
     ReAS(s,f,0,s.size(),res);
